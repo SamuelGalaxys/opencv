@@ -14,6 +14,9 @@ class VideoCamera(object):
 
     def __del__(self):
         self.video.release()
+        
+        def __add__(self):
+            self.video.upload()
 
     def get_frame(self):
         # Grab a single frame of video
